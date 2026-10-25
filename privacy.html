@@ -37,6 +37,12 @@ a{color:#0b6bcb}nav{text-align:center;font-size:14px;margin-bottom:16px}</style>
 <td>无法通过防沉迷检查，无法进入游戏</td>
 </tr>
 <tr>
+<td>看广告领取奖励（可选）</td>
+<td>设备信息、网络信息、应用信息、广告展示和点击记录等，详见第三节广告 SDK</td>
+<td>广告 SDK</td>
+<td>拿不到广告奖励，不影响其他玩法</td>
+</tr>
+<tr>
 <td>本地存档</td>
 <td>游戏进度、设置、你是否已同意本政策</td>
 <td>只保存在你的设备上</td>
@@ -44,7 +50,7 @@ a{color:#0b6bcb}nav{text-align:center;font-size:14px;margin-bottom:16px}</style>
 </tr>
 </tbody>
 </table>
-<p>我们从 TapSDK 拿到的信息只用于判断你能否进入游戏，不会上传到我们这里，也不会用于其他用途。</p>
+<p>我们从 TapSDK 拿到的信息只用于判断你能否进入游戏，不会上传到我们这里，也不会用于其他用途。<strong>广告只在你主动点击"看广告"时才会播放。</strong></p>
 <h2>三、第三方 SDK</h2>
 <table>
 <thead>
@@ -79,8 +85,13 @@ a{color:#0b6bcb}nav{text-align:center;font-size:14px;margin-bottom:16px}</style>
 </tr>
 </tbody>
 </table>
+<p>| TapADN SDK（聚合版） | 上海艾得蒽数字科技有限公司 | 你点击"看广告领奖励"时，加载和播放激励视频广告；广告监测归因、反作弊、统计分析、减少崩溃 | 设备信息（品牌、型号、系统版本、屏幕、语言、时区、OAID；如系统允许，还可能有 IMEI、AndroidID）；网络信息（IP 地址、Wi-Fi 状态）；应用信息（包名、版本、前后台状态；可能读取已安装应用列表）；传感器信息（用于"摇一摇"互动广告）；广告展示和点击记录；崩溃和性能数据；如你授权，还可能有位置信息 | 网络、网络状态 | 加密传输，由 SDK 自行收集 | <a href="https://ssp.dirichlet.cn/docs/agreement/">TapADN 隐私政策</a> |
+| 穿山甲 SDK（经 TapADN 聚合） | 北京巨量引擎网络技术有限公司 | 同上，提供广告内容 | 以其隐私政策为准，与上一行类似 | 网络 | 加密传输，由 SDK 自行收集 | <a href="https://www.csjplatform.com/privacy/partner">穿山甲隐私政策</a> |
+| 优量汇 SDK（经 TapADN 聚合） | 深圳市腾讯计算机系统有限公司 | 同上，提供广告内容 | 以其隐私政策为准，与上一行类似 | 网络 | 加密传输，由 SDK 自行收集 | <a href="https://e.qq.com/dev/help_detail.html?cid=2005&amp;pid=5983">优量汇隐私政策</a> |
+| 爱奇艺联盟 SDK（经 TapADN 聚合） | 北京爱奇艺科技有限公司 | 同上，提供广告内容 | 以其隐私政策为准，与上一行类似 | 网络 | 加密传输，由 SDK 自行收集 | <a href="https://union.iqiyi.com/platform/privacyPolicy">爱奇艺联盟隐私政策</a> |
+| 百度联盟 SDK（经 TapADN 聚合） | 北京百度网讯科技有限公司 | 同上，提供广告内容 | 以其隐私政策为准，与上一行类似 | 网络 | 加密传输，由 SDK 自行收集 | <a href="https://union.baidu.com/aibqt/legal/policies">百度联盟隐私政策</a> |</p>
 <p>本游戏使用 Unity 引擎制作，<strong>已关闭 Unity 的数据分析、崩溃上报和性能上报功能</strong>，引擎不会收集你的信息。</p>
-<p><strong>本版本没有接入广告 SDK。</strong> 以后如果加入"看广告领取奖励"，我们会更新本政策、列出广告 SDK，并在游戏内弹窗再次征得你的同意。</p>
+<p><strong>关于广告：</strong> 广告 SDK 也只在你同意本政策后才会初始化。我们不会为了广告主动申请定位、电话等权限。如果你不希望收到个性化广告，可以在手机系统设置里关闭"个性化广告"或重置广告标识符（OAID），也可以不看广告。</p>
 <p>第三方 SDK 如何处理信息，以它们各自的隐私政策为准。</p>
 <h2>四、设备权限</h2>
 <table>
@@ -94,10 +105,10 @@ a{color:#0b6bcb}nav{text-align:center;font-size:14px;margin-bottom:16px}</style>
 </thead>
 <tbody>
 <tr>
-<td>网络</td>
-<td>登录和防沉迷检查</td>
+<td>网络、网络状态</td>
+<td>登录、防沉迷检查、加载广告</td>
 <td>安装时自动获得（安卓不单独询问）</td>
-<td>无法完成登录和防沉迷，无法进入游戏</td>
+<td>无法完成登录和防沉迷，无法进入游戏；无法看广告</td>
 </tr>
 <tr>
 <td>读写存储</td>
